@@ -37,7 +37,7 @@ class App extends React.Component {
   }
   
   
-  findPets=()=>{
+  componentDidMount(){
   if(this.state.filters.type === 'all') {
     fetch(`/api/pets`)
     .then(resp => resp.json())
